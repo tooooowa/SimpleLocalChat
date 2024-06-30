@@ -1,0 +1,4 @@
+name: SimpleLocalChat
+version: '${version}'
+main: com.github.tooooowa.simplelocalchat.SimpleLocalChat
+api-version: '1.20'
