@@ -12,7 +12,6 @@ object ChatEventListener: Listener {
     @EventHandler
     fun onChat(event: PlayerChatEvent) {
         event.isCancelled = true
-        Bukkit.broadcastMessage(getColored("${event.player.name}: ${event.message}"))
 
         val player = event.player
         val playerLocation = player.location
