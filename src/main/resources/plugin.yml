@@ -4,9 +4,6 @@ main: com.github.tooooowa.simplelocalchat.SimpleLocalChat
 api-version: '1.20'
 authors: [towa]
 description: This is a minecraft plugin to chat up close.
-depend:
-  - PlayerParticles
-  - Multiverse-Core
 commands:
   range:
     description: チャット範囲を選択します
