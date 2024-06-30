@@ -9,14 +9,14 @@ commands:
     description: チャット範囲を選択します
     usage: /<command>
     aliases: chatrange
-    permission: earthcore.commands.chatrange
+    permission: simplelocalchat.commands.chatrange
 
 permissions:
-  earthcore.commands.*:
+  simplelocalchat.commands.*:
     default: false
-    description: EarthCoreプラグインの各コマンドの権限
+    description: SimpleLocalChatプラグインの各コマンドの権限
     children:
-      earthcore.commands.chatrange: true
-  earthcore.commands.chatrange:
+      simplelocalchat.commands.chatrange: true
+  simplelocalchat.commands.chatrange:
     default: true
     description: チャット範囲を変更するコマンド
