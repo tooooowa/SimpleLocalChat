@@ -2,3 +2,24 @@ name: SimpleLocalChat
 version: '${version}'
 main: com.github.tooooowa.simplelocalchat.SimpleLocalChat
 api-version: '1.20'
+authors: [towa]
+description: This is a minecraft plugin to chat up close.
+depend:
+  - PlayerParticles
+  - Multiverse-Core
+commands:
+  range:
+    description: チャット範囲を選択します
+    usage: /<command>
+    aliases: chatrange
+    permission: earthcore.commands.chatrange
+
+permissions:
+  earthcore.commands.*:
+    default: false
+    description: EarthCoreプラグインの各コマンドの権限
+    children:
+      earthcore.commands.chatrange: true
+  earthcore.commands.chatrange:
+    default: true
+    description: チャット範囲を変更するコマンド
