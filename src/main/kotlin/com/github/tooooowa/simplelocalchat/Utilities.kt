@@ -14,8 +14,7 @@ object Utilities {
         return ChatColor.translateAlternateColorCodes('&', text)
     }
     fun sendActionBar(player: Player, message: String){
-        val baseComponents = TextComponent.fromLegacyText(message) as BaseComponent
-        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, baseComponents)
+        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent(message))
     }
     fun transferPlayer(player: Player, targetServer: String){
         Bukkit.getServer().messenger.registerOutgoingPluginChannel(PLUGIN, "BungeeCord")
